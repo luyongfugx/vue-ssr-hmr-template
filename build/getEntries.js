@@ -1,3 +1,4 @@
+"use strict";
 const path = require('path')
 const fs = require('fs')
 const projectDir = path.resolve(__dirname, '../client/')
