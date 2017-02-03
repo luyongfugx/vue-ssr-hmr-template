@@ -4,7 +4,9 @@ const path = require('path')
 const http = require('http')
 global.NODE_ENV = process.env.NODE_ENV || 'production'
 
-const PORT = 8080
+let PORT = 8081;
+let args = process.argv.splice(2);
+PORT =  parseInt(args[0]);
 const isDev = NODE_ENV === 'development';
 const app = express()
 const router = require('./server/routers/router')
@@ -18,7 +20,7 @@ if (isDev) {
     // local variables for all views
     app.locals.env = NODE_ENV;
     app.locals.reload = true;
-    
+
     // static assets served by webpack-dev-middleware & webpack-hot-middleware for development
     const webpack = require('webpack')
     const webpackDevMiddleware = require('webpack-dev-middleware')
@@ -47,7 +49,7 @@ if (isDev) {
 } else {
     // static assets served by express.static() for production
     app.use(express.static(path.join(__dirname, 'public')))
-    
+
     app.listen(PORT, function () {
         console.log('App (production) is now running on PORT '+ PORT +'!')
     })
