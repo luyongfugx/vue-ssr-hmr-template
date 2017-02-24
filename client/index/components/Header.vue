@@ -137,7 +137,7 @@
         <slot></slot>
         <router-link class="header-logo" to="/login" v-if="!User">
             <div class="header-sign">
-                <button :button="button.signUp">登new year</button>
+                <button :button="button.signUp">登new year  etcd11</button>
                 <button :button="button.signIn">注册</button>
             </div>
         </router-link>
