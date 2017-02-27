@@ -656,7 +656,7 @@ var __vue_styles__ = {}
 __vue_exports__ = __webpack_require__(5)
 
 /* template */
-var __vue_template__ = __webpack_require__(24)
+var __vue_template__ = __webpack_require__(21)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -687,7 +687,7 @@ var __vue_styles__ = {}
 __vue_exports__ = __webpack_require__(6)
 
 /* template */
-var __vue_template__ = __webpack_require__(23)
+var __vue_template__ = __webpack_require__(24)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -713,7 +713,7 @@ var __vue_exports__, __vue_options__
 var __vue_styles__ = {}
 
 /* template */
-var __vue_template__ = __webpack_require__(22)
+var __vue_template__ = __webpack_require__(20)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -742,7 +742,7 @@ var __vue_styles__ = {}
 __vue_exports__ = __webpack_require__(7)
 
 /* template */
-var __vue_template__ = __webpack_require__(21)
+var __vue_template__ = __webpack_require__(22)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -771,7 +771,7 @@ var __vue_styles__ = {}
 __vue_exports__ = __webpack_require__(8)
 
 /* template */
-var __vue_template__ = __webpack_require__(18)
+var __vue_template__ = __webpack_require__(19)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -800,7 +800,7 @@ var __vue_styles__ = {}
 __vue_exports__ = __webpack_require__(9)
 
 /* template */
-var __vue_template__ = __webpack_require__(20)
+var __vue_template__ = __webpack_require__(18)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -829,7 +829,7 @@ var __vue_styles__ = {}
 __vue_exports__ = __webpack_require__(10)
 
 /* template */
-var __vue_template__ = __webpack_require__(19)
+var __vue_template__ = __webpack_require__(23)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -854,6 +854,20 @@ module.exports = __vue_exports__
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', [_c('div', {
     staticClass: "content home"
+  }, [_vm._v("\n         it's fake Login\n         "), _c('button', {
+    on: {
+      "click": _vm.refresh
+    }
+  }, [_vm._v(" refresh ")])])])
+},staticRenderFns: []}
+
+/***/ },
+/* 19 */
+/***/ function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', [_c('div', {
+    staticClass: "content home"
   }, [_vm._v("\n        it's home page\n        "), _vm._l((_vm.list), function(item) {
     return _c('div', [_vm._v(_vm._s(item))])
   }), _vm._v(" "), _c('button', {
@@ -864,33 +878,29 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: []}
 
 /***/ },
-/* 19 */
-/***/ function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('div', {
-    staticClass: "content home"
-  }, [_vm._v("\n         it's entry page\n    ")])])
-}]}
-
-/***/ },
 /* 20 */
 /***/ function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('div', {
-    staticClass: "content home"
-  }, [_vm._v("\n         it's fake Login\n         "), _c('button', {
-    on: {
-      "click": _vm.refresh
-    }
-  }, [_vm._v(" refresh ")])])])
+  return _c('div', [_vm._v("\n    I'm compA\n")])
 },staticRenderFns: []}
 
 /***/ },
 /* 21 */
+/***/ function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    attrs: {
+      "id": "app"
+    }
+  }, [_c('um-header'), _vm._v(" "), _c('router-view', {
+    staticClass: "view"
+  })], 1)
+},staticRenderFns: []}
+
+/***/ },
+/* 22 */
 /***/ function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -908,15 +918,19 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 }]}
 
 /***/ },
-/* 22 */
+/* 23 */
 /***/ function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_vm._v("\n    I'm compA\n")])
-},staticRenderFns: []}
+  return _vm._m(0)
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', [_c('div', {
+    staticClass: "content home"
+  }, [_vm._v("\n         it's entry page\n    ")])])
+}]}
 
 /***/ },
-/* 23 */
+/* 24 */
 /***/ function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -975,25 +989,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "button": _vm.button.signUp
     }
-  }, [_vm._v("登录")]), _vm._v(" "), _c('button', {
+  }, [_vm._v("登new year  etcd11")]), _vm._v(" "), _c('button', {
     attrs: {
       "button": _vm.button.signIn
     }
   }, [_vm._v("注册")])])]) : _vm._e()], 2)
-},staticRenderFns: []}
-
-/***/ },
-/* 24 */
-/***/ function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    attrs: {
-      "id": "app"
-    }
-  }, [_c('um-header'), _vm._v(" "), _c('router-view', {
-    staticClass: "view"
-  })], 1)
 },staticRenderFns: []}
 
 /***/ },
